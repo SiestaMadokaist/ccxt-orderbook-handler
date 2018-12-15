@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "test": "mocha -r ts-node/register src/**/*.spec.ts",
+    "test": "mocha -r ts-node/register src/**/*.spec.ts && yarn lint",
+    "lint": "tslint src/*",
     "postinstall": "tsc"
   },
   "devDependencies": {
@@ -11,6 +12,7 @@
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.5",
     "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
     "typescript": "^3.2.2"
   }
 }

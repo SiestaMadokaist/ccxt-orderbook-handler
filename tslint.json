@@ -1,4 +1,4 @@
-<html><body>You are being <a href="https://raw.githubusercontent.com/Microsoft/TypeScript-Node-Starter/master/tslint.json">redirected</a>.</body></html>{
+{
     "rules": {
         "class-name": true,
         "comment-format": [

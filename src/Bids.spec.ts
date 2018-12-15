@@ -1,9 +1,9 @@
-import 'mocha';
-import { expect } from 'chai';
-import { Bids } from './Bids';
-import { OrderBook } from './Base';
+import "mocha";
+import { expect } from "chai";
+import { Bids } from "./Bids";
+import { OrderBook } from "./Base";
 
-let priceList = [
+const priceList = [
   [10, 10],
   [9, 9],
   [8, 8],
@@ -16,14 +16,14 @@ let priceList = [
   [1, 1]
 ] as any as Array<[number, number]>;
 
-describe('Bids', () => {
-  describe('.pushMulti', () => {
-    it('should correctly update the price', () => {
-      let bids = new Bids(priceList);
-      let updates = [
+describe("Bids", () => {
+  describe(".pushMulti", () => {
+    it("should correctly update the price", () => {
+      const bids = new Bids(priceList);
+      const updates = [
         [8, 0] as OrderBook,
         [9.5, 4.5] as OrderBook,
-      ]
+      ];
       bids.pushMulti(updates);
       const afterUpdates = bids.toArray();
       const topMost = afterUpdates[0];
