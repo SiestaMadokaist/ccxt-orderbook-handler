@@ -1,4 +1,5 @@
 {
+  "version": "0.0.1",
   "scripts": {
     "test": "mocha -r ts-node/register src/**/*.spec.ts && yarn lint",
     "lint": "tslint src/*",
