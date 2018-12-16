@@ -1,7 +1,9 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "main": "dist/index.js",
   "scripts": {
     "test": "mocha -r ts-node/register src/**/*.spec.ts && yarn lint",
+    "build": "yarn test && tsc",
     "lint": "tslint src/*",
     "postinstall": "tsc"
   },
